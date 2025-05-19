@@ -1,0 +1,30 @@
+{
+    "last_update": "2025-05-18 14:06:45",
+    "files": [
+        "مجلد محادثات",
+        "AI_Universal_Builder",
+        "__pycache__ (1)",
+        "OmniMind_Backup",
+        "Backup_Files",
+        "OmniMind_Backups",
+        "OmniMind_Security",
+        "__pycache__",
+        "scripts",
+        "models",
+        "config",
+        "logs",
+        "development",
+        "construction",
+        "archives",
+        "code",
+        "reports",
+        "data",
+        "notebooks",
+        "documents",
+        "unused_code_report.json",
+        "improvement_plan.json",
+        "integration_analysis.json",
+        "final_integration_report.json",
+        "notebooks_analysis.json"
+    ]
+}

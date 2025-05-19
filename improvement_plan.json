@@ -1,0 +1,10 @@
+{
+    "functions_to_activate": {
+        "train_brain": "دمجه داخل وحدة التعلم الذاتي",
+        "predict": "استخدامه في محرك التنبؤ"
+    },
+    "variables_to_optimize": {
+        "correlation_matrix": "تحليل العلاقات بين البيانات",
+        "moving_average": "تحسين تحليل الاتجاهات الزمنية"
+    }
+}
