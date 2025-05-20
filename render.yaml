@@ -10,3 +10,6 @@ services:
         value: "your-secret-key"
       - key: DATABASE_URL
         value: "your-database-url"
+
+      - key: PORT
+        value: "5000"
