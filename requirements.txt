@@ -1,7 +1,4 @@
-fastapi
-uvicorn
+Flask
 gunicorn
 requests
 numpy
-
-Flask
