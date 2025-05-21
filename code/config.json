@@ -1,0 +1,7 @@
+{
+    "PORT": 5000,
+    "AUTO_CONNECT": true,
+    "MODEL_NAME": "OmniMindUltimate",
+    "SECURITY_LEVEL": "high",
+    "ENABLE_LOGGING": true
+}
