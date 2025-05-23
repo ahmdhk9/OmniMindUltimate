@@ -1,0 +1,49 @@
+name: تحسين تلقائي للكود
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  auto-fix:
+    name: تحسين الكود تلقائيًا
+    runs-on: ubuntu-latest
+
+    steps:
+    # الخطوة 1: التحقق من المستودع
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # الخطوة 2: تثبيت Node.js (لتشغيل أدوات Prettier و ESLint)
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    # الخطوة 3: تثبيت الأدوات (Prettier و ESLint)
+    - name: Install dependencies
+      run: |
+        npm install prettier eslint
+
+    # الخطوة 4: تحسين الكود باستخدام Prettier
+    - name: Run Prettier
+      run: npx prettier --write .
+
+    # الخطوة 5: إصلاح الأخطاء باستخدام ESLint
+    - name: Run ESLint
+      run: npx eslint --fix .
+
+    # الخطوة 6: التحقق مما إذا كانت هناك تغييرات
+    - name: Check for changes
+      run: |
+        if [[ -n "$(git status --porcelain)" ]]; then
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "تحسين تلقائي للتغييرات بواسطة GitHub Actions"
+          git push origin $(git rev-parse --abbrev-ref HEAD)
+        else
+          echo "✅ لا توجد تغييرات جديدة لتحسينها."
+        fi
