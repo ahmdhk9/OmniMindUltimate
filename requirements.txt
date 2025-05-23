@@ -1,7 +1,4 @@
 Flask
 gunicorn
-<<<<<<< HEAD
-=======
 requests
 numpy
->>>>>>> 78ca8ea80d0ef91324596946ad60aca6b6e73da3
