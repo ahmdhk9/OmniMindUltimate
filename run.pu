@@ -1,0 +1,47 @@
+import sys
+
+def generate_code():
+    print("تشغيل توليد الأكواد...")
+    # استدعِ الدالة المناسبة لتوليد الأكواد من ملفات /app هنا
+    # من الأمثلة:
+    # from app.code_generator import main
+    # main()
+    pass
+
+def create_video():
+    print("تشغيل صناعة الفيديو...")
+    # استدعِ الدالة المناسبة لصناعة الفيديو من ملفات /video هنا
+    # من الأمثلة:
+    # from video.video_creator import main
+    # main()
+    pass
+
+def self_improve():
+    print("تشغيل تحسين الكود الذاتي...")
+    # استدعِ الدالة المناسبة للتحسين الذاتي من ملفات /self_improve هنا
+    # من الأمثلة:
+    # from self_improve.improver import main
+    # main()
+    pass
+
+def show_help():
+    print("استخدام: python run.py [option]")
+    print("خيارات التشغيل:")
+    print("  code    لتشغيل توليد الأكواد")
+    print("  video   لتشغيل صناعة الفيديو")
+    print("  improve لتشغيل تحسين الكود الذاتي")
+    print("  help    لعرض هذه المساعدة")
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        show_help()
+    else:
+        option = sys.argv[1].lower()
+        if option == "code":
+            generate_code()
+        elif option == "video":
+            create_video()
+        elif option == "improve":
+            self_improve()
+        else:
+            show_help()
