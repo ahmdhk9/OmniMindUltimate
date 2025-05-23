@@ -1,4 +1,12 @@
-Flask
-gunicorn
-requests
+# مكتبات أساسية ممكن تكون مستخدمة (عدّل حسب الكود)
 numpy
+torch
+opencv-python
+Pillow
+requests
+tqdm
+transformers
+scipy
+matplotlib
+scikit-learn
+pandas
