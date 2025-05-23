@@ -46,6 +46,12 @@
 
 ## الترخيص
 
+3. إذا قمت بإجراء تغييرات أو إضافة الملف، قم برفعه إلى المستودع باستخدام:
+
+```bash
+git add README.md
+git commit -m "Add or update README file"
+git push origin main
 يرجى مراجعة ملف الترخيص في المشروع.
 # OmniMindUltimate
 قمت بتطويره 2025/5/1
